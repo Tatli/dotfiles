@@ -101,4 +101,4 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias gis='git status'
-
+alias gia='git add'
