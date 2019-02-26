@@ -115,3 +115,17 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export DEV=/_DEV_
+export JAVA_HOME=$DEV/JAVA
+export JAVA8_HOME=$DEV/JAVA
+export JAVA10_HOME=$DEV/JAVA10
+export MVN_HOME=$DEV/MAVEN
+export MAVEN_HOME=$MVN_HOME
+export M2_HOME=$MVN_HOME
+export GRADLE_HOME=$DEV/GRADLE
+export NODEJS_HOME=$DEV/NODE
+export ANDROID_HOME=/home/$USER/Applications/android-studio
+export PYENV=/home/$USER/.pyenv
+
+export PATH=$JAVA_HOME/bin:$MVN_HOME/bin:$GRADLE_HOME/bin:$NODEJS_HOME/bin:$ANDROID_HOME/bin:$PYENV/bin:$PATH
